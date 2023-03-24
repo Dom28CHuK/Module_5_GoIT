@@ -36,4 +36,8 @@ public class SpaceShip {
         }
         this.serialNumber = serialNumber;
     }
+
+    public void printInfo() {
+        System.out.println("Name is " + this.name + ", serial number is " + this.serialNumber);
+    }
 }
