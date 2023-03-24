@@ -25,7 +25,13 @@ public class SpaceShip {
     }
 
     public void setSerialNumber(String serialNumber) {
-        if (serialNumber.startsWith("SN")) {
+//        if (serialNumber != null && serialNumber.matches("^SN[\\w]{6}$")) {
+//            this.serialNumber = serialNumber;
+//        }
+        if (serialNumber.length() != 8) {
+            return;
+        }
+        if (!serialNumber.startsWith("SN")) {
             return;
         }
         this.serialNumber = serialNumber;
