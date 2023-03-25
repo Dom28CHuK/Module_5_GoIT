@@ -1,7 +1,4 @@
-import classes.Engine;
-import classes.SpaceRocketLauncher;
-import classes.SpaceShip;
-import classes.XFuelEngine;
+import classes.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,11 +40,16 @@ public class Main {
 
 //        System.out.println(new Engine().getFuelType());
 
-        Engine basicEngine = new Engine();
-        System.out.println(basicEngine.getFuelType()); //A500
+//        Engine basicEngine = new Engine();
+//        System.out.println(basicEngine.getFuelType()); //A500
+//
+//        Engine xFuelEngine = new XFuelEngine();
+//        System.out.println(xFuelEngine.getFuelType()); //XFuel
 
-        Engine xFuelEngine = new XFuelEngine();
-        System.out.println(xFuelEngine.getFuelType()); //XFuel
+        AdvancedXFuelEngine engine = new AdvancedXFuelEngine();
+        engine.setPower(1000);
+        engine.setSerialNumber("SN504030");
+        engine.printInfo(); //Serial number is SN504030, power is 1000
 
 
     }
