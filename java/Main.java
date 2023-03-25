@@ -1,6 +1,7 @@
 import classes.Engine;
 import classes.SpaceRocketLauncher;
 import classes.SpaceShip;
+import classes.XFuelEngine;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,7 +41,13 @@ public class Main {
 //
 //        System.out.println("Power is " + launcher.getTotalPower());
 
-        System.out.println(new Engine().getFuelType());
+//        System.out.println(new Engine().getFuelType());
+
+        Engine basicEngine = new Engine();
+        System.out.println(basicEngine.getFuelType()); //A500
+
+        Engine xFuelEngine = new XFuelEngine();
+        System.out.println(xFuelEngine.getFuelType()); //XFuel
 
 
     }
