@@ -1,3 +1,4 @@
+import classes.Engine;
 import classes.SpaceRocketLauncher;
 import classes.SpaceShip;
 
@@ -25,18 +26,22 @@ public class Main {
 //        //Name is Voyager, serial number is SN504030
 //        ship.printInfo();
 
-        SpaceRocketLauncher launcher = new SpaceRocketLauncher();
-        launcher.setBigRocketCount(5);
-        launcher.setSmallRocketCount(35);
+//        SpaceRocketLauncher launcher = new SpaceRocketLauncher();
+//        launcher.setBigRocketCount(5);
+//        launcher.setSmallRocketCount(35);
+//
+//        System.out.println("Power is " + launcher.getTotalPower());
+//
+//        launcher.launchBigRocket();
+//        System.out.println("Big rocket count is " + launcher.getBigRocketCount());
+//
+//        launcher.launchSmallRocket();
+//        System.out.println("Small rocket count is " + launcher.getSmallRocketCount());
+//
+//        System.out.println("Power is " + launcher.getTotalPower());
 
-        System.out.println("Power is " + launcher.getTotalPower());
+        System.out.println(new Engine().getFuelType());
 
-        launcher.launchBigRocket();
-        System.out.println("Big rocket count is " + launcher.getBigRocketCount());
 
-        launcher.launchSmallRocket();
-        System.out.println("Small rocket count is " + launcher.getSmallRocketCount());
-
-        System.out.println("Power is " + launcher.getTotalPower());
     }
 }
