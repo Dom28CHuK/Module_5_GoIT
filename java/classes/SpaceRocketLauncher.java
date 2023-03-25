@@ -9,7 +9,9 @@ public class SpaceRocketLauncher {
     }
 
     public void setBigRocketCount(int bigRocketCount) {
-        this.bigRocketCount = bigRocketCount;
+        if (bigRocketCount >= 0 && bigRocketCount <= 100) {
+            this.bigRocketCount = bigRocketCount;
+        }
     }
 
     public int getSmallRocketCount() {
@@ -17,16 +19,24 @@ public class SpaceRocketLauncher {
     }
 
     public void setSmallRocketCount(int smallRocketCount) {
-        this.smallRocketCount = smallRocketCount;
+        if (smallRocketCount > 0 & smallRocketCount <= 100) {
+            this.smallRocketCount = smallRocketCount;
+        }
     }
 
-    public void launchBigRocket(int bigRocketCount) {
-
+    public void launchBigRocket() {
+        if (bigRocketCount > 0) {
+            bigRocketCount--;
+            System.out.println("Launch big rocket");
+        }
     }
-    public void launchSmallRocket(int smallRocketCount) {
-
+    public void launchSmallRocket() {
+        if (smallRocketCount > 0) {
+            smallRocketCount--;
+            System.out.println("Launch small rocket");
+        }
     }
     public int getTotalPower() {
-
+        return (bigRocketCount * 100) + (smallRocketCount * 50);
     }
 }

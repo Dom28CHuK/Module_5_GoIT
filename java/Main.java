@@ -27,15 +27,15 @@ public class Main {
 
         SpaceRocketLauncher launcher = new SpaceRocketLauncher();
         launcher.setBigRocketCount(5);
-        launcher.setSmallRocketCount(10);
+        launcher.setSmallRocketCount(35);
 
         System.out.println("Power is " + launcher.getTotalPower());
 
         launcher.launchBigRocket();
         System.out.println("Big rocket count is " + launcher.getBigRocketCount());
 
-        laucnher.launchSmallRocket();
-        System.out.println("Small rocket count is " + laucnher.getSmallRocketCount());
+        launcher.launchSmallRocket();
+        System.out.println("Small rocket count is " + launcher.getSmallRocketCount());
 
         System.out.println("Power is " + launcher.getTotalPower());
     }
