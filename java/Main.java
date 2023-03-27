@@ -24,6 +24,12 @@ public class Main {
         p2.setY(1);
         p2.setZ(1);
 
-        System.out.println(p1.equals(p2)); //Will be false
+        Point p3 = new Point();
+        p3.setX(2);
+        p3.setY(2);
+        p3.setZ(3);
+
+        System.out.println(p1.equals(p2)); //Should be true
+        System.out.println(p1.equals(p3)); //Should be false
     }
 }
