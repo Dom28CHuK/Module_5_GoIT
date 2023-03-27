@@ -2,11 +2,9 @@ import classes.*;
 
 public class Main {
     public static void main(String[] args) {
-        RocketLauncher launcher = new RocketLauncher();
-        launcher.setSize("big");
-        launcher.setRocketCount(50);
-
-        //Should be - Size is big, rocket count is 50
-        System.out.println(launcher);
+        Stars stars = new Stars();
+        stars.setCount(153);
+        System.out.println(stars);
+        System.out.println(stars.getCount());
     }
 }
