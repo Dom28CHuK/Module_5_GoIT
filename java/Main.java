@@ -1,7 +1,4 @@
-import classes.Planets;
-import classes.Point;
-import classes.SpaceUtils;
-import classes.SpaceportMessages;
+import classes.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +26,20 @@ public class Main {
         p3.setY(2);
         p3.setZ(3);
 
-        System.out.println(p1.equals(p2)); //Should be true
-        System.out.println(p1.equals(p3)); //Should be false
+        StarTrack track1 = new StarTrack();
+        track1.setStart(p1);
+        track1.setFinish(p2);
+
+        StarTrack track2 = new StarTrack();
+        track2.setStart(p1);
+        track2.setFinish(p2);
+
+        StarTrack track3 = new StarTrack();
+        track3.setStart(p1);
+        track3.setFinish(p3);
+
+        System.out.println(track1.equals(track2)); //Should be true
+        System.out.println(track1.equals(track3)); //Should be false
+        System.out.println(track1.hashCode() == track2.hashCode()); //Should be true
     }
 }
