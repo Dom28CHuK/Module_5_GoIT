@@ -1,11 +1,12 @@
-import classes.Mars;
-import classes.Moon;
-import classes.PlanetTester;
+import classes.FirNum;
+import classes.FirTest;
 
 public class Main {
     public static void main(String[] args) {
-        PlanetTester tester = new PlanetTester();
-        System.out.println(tester.test(new Mars())); //Should be "planet"
-        System.out.println(tester.test(new Moon())); //Should be "not planet"
+        FirNum firNum = new FirNum();
+        FirTest firTest = new FirTest();
+
+        //Should be 10
+        System.out.println(firTest.test(firNum, 10));
     }
 }
