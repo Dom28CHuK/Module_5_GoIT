@@ -1,5 +1,12 @@
+import classes.FirNum;
+import classes.FirTest;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        FirNum firNum = new FirNum();
+        FirTest firTest = new FirTest();
+
+        //Should be 10
+        System.out.println(firTest.test(firNum, 10));
     }
 }
