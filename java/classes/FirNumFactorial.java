@@ -3,10 +3,11 @@ package classes;
 public class FirNumFactorial extends FirNum {
     @Override
     public int calc(int n) {
-        int sum = 0;
+        int result = 1;
         for (int i = 1; i <= n; i++) {
-            sum *= i;
+            result *= i;
         }
-        return sum;
+        return result;
+
     }
 }
